@@ -1,0 +1,3 @@
+rootProject.name = 'yyox'
+
+include ':app', ':rxerrorhandler', ':arms', ':kf5sdkModule', ':PushSDK'

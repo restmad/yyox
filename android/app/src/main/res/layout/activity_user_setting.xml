@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/navigationbar"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="#1B82D1">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:background="#00000000"
+            android:onClick="btn_back_click"
+            android:contentDescription=""/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_my_settings"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:onClick="rl_edit_click" >
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="@string/user_settings_personal"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="#00000000"
+                android:contentDescription=""
+                android:src="@mipmap/arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_modify"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/preference_item"
+            android:clickable="true"
+            android:onClick="rl_modify_click" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="#00000000"
+                android:contentDescription=""
+                android:src="@mipmap/arrow" />
+
+            <TextView
+                android:id="@+id/tv_card"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_settings_password"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:onClick="switch_on_off"
+            android:id="@+id/rl_invite"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/preference_item" >
+
+            <TextView
+                android:id="@+id/tv_integral"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="@string/user_settings_push"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!--<Switch
+                android:textOn="开启"
+                android:textOff="关闭"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:id="@+id/switch1" />-->
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_style"
+            android:text="@string/user_settings_no_login"
+            android:onClick="btn_logout_click"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

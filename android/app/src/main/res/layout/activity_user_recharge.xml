@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/navigationbar"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="#1B82D1">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:background="#00000000"
+            android:onClick="btn_back_click"
+            android:contentDescription=""/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100sp"
+                    android:layout_height="48sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/user_recharge_vip"
+                    android:textColor="#999999"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:id="@+id/code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:background="@null"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#6c7883"
+                    android:textColorHint="#cccccc"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/vipDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100sp"
+                    android:layout_height="48sp"
+                    android:text="@string/user_recharge_vip_time"
+                    android:textColor="#999999"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:id="@+id/level"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:background="@null"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#6c7883"
+                    android:textColorHint="#cccccc"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100sp"
+                    android:layout_height="48sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/user_recharge_money"
+                    android:textColor="#999999"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:id="@+id/phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:background="@null"
+                    android:hint="@string/user_recharge_recharge_money_hint"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#fc9b31"
+                    android:textColorHint="#cccccc"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/preference_item"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100sp"
+                    android:layout_height="48sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/user_recharge_recharge_money"
+                    android:textColor="#999999"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50sp"
+                    android:background="@null"
+                    android:hint="@string/user_recharge_recharge_money_hint"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#fc9b31"
+                    android:textColorHint="#cccccc"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@drawable/preference_item"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/user_recharge_way"
+                    android:textColor="#999999"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="14sp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_activity_order_pay_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/rb_activity_order_pay_alipay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text=""
+                        android:clickable="false"
+                        android:drawableLeft="@mipmap/zhifubao"
+                        android:checked="true"/>
+                <!-- <RadioButton
+                     android:id="@+id/btn2"
+                     android:layout_width="150dp"
+                     android:layout_height="36dp"
+                     android:layout_marginTop="10dp"
+                     android:text="微信支付"/>
+
+                 <RadioButton
+                     android:id="@+id/btn3"
+                     android:layout_width="150dp"
+                     android:layout_height="36dp"
+                     android:layout_marginTop="10dp"
+                     android:text="银联支付"/>-->
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp" >
+
+            <Button
+                android:onClick="recharge_click"
+                android:id="@+id/user_recharge"
+                android:layout_width="fill_parent"
+                android:layout_height="40sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_style"
+                android:text="@string/user_my_recharge"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

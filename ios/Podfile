@@ -1,0 +1,47 @@
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'yyox' do
+
+pod 'MJExtension', '~> 3.0.10'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'Masonry', '~> 1.0.1'
+pod 'MJRefresh', '~> 3.1.9'
+pod 'SVProgressHUD', '~> 2.0.3'
+pod 'iCarousel', '~> 1.8.2'
+pod 'Onboard'
+
+pod 'YYKeyboardManager', '~> 1.0.1'
+pod 'YYWebImage', '~> 1.0.4'
+pod 'YYCategories', '~> 1.0.3'
+pod 'YYText', '~> 1.0.5'
+
+pod 'Realm'
+
+# 主模块(必须)
+pod 'ShareSDK3'
+# Mob 公共库(必须) 如果同时集成SMSSDK iOS2.0:可看此注意事项：http://bbs.mob.com/thread-20051-1-1.html
+pod 'MOBFoundation'
+
+# UI模块(非必须，需要用到ShareSDK提供的分享菜单栏和分享编辑页面需要以下1行)
+pod 'ShareSDK3/ShareSDKUI'
+
+pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+
+# 扩展模块（在调用可以弹出我们UI分享方法的时候是必需的）
+pod 'ShareSDK3/ShareSDKExtension'
+
+# debug
+pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+
+# swift
+pod 'YJWebViewHolder'
+pod 'Kingfisher'
+pod 'Alamofire'
+pod 'SwiftyJSON'
+
+end

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    android:id="@+id/cv_item_package_detail_goods_footer_list"
+    card_view:cardCornerRadius="0dp">
+
+    <Button
+        android:id="@+id/btn_item_package_detail_goods_footer_list_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:layout_centerInParent="true"
+        android:text="--完善商品申报信息--"
+        android:textColor="#1e81d1"
+        android:textSize="16sp" />
+
+</android.support.v7.widget.CardView>
+

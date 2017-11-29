@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.youth.banner.Banner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Service_banner"
+        android:layout_width="match_parent"
+        android:layout_height="125dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@+id/btn_price"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/jiage"
+                android:background="#00000000"
+                android:textColor="#333333"
+                android:text="@string/service_head_price" />
+
+            <Button
+                android:id="@+id/btn_service"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/fuwu"
+                android:background="#00000000"
+                android:textColor="#333333"
+                android:text="@string/service_head_service" />
+
+            <Button
+                android:id="@+id/btn_safe"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/baozhang"
+                android:background="#00000000"
+                android:textColor="#333333"
+                android:text="@string/service_head_security" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@+id/btn_online"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/gongdan"
+                android:background="#00000000"
+                android:textColor="#333333"
+                android:text="@string/service_head_support" />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_online_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/zaixiankefu"
+                android:background="#00000000"
+                android:textColor="#333333"
+                android:text="@string/service_head_online_service" />
+
+            <Button
+                android:enabled="false"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:textColor="#333333"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </LinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="166px"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        <Button
+            android:id="@+id/service_btn_seek"
+            android:textColor="#999999"
+            android:text="@string/service_head_query"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/service_seek"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

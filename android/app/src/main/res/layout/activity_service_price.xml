@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_service_price"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yyox.mvp.ui.activity.ServicePriceActivity">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/navigationbar"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:background="#1B82D1">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:background="#00000000"
+            android:onClick="btn_back_click"
+            android:contentDescription=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:onClick="btn_rule_click"
+            android:text="计价规则"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/preference_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="150px"
+            android:text="仓库："
+            android:textColor="#666666"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="60px"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150px"
+            android:onClick="rl_order_report_warehouse_click"
+            android:clickable="true">
+            <ImageView
+                android:id="@+id/iv_service_warehouse"
+                android:layout_toLeftOf="@+id/service_warehouse_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@mipmap/error"
+                android:textColor="#fc9b31"
+                android:visibility="gone"
+                android:textSize="14sp"/>
+            <TextView
+                android:enabled="false"
+                android:id="@+id/service_warehouse_text"
+                android:layout_toLeftOf="@+id/service_warehouse_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:hint="请选择仓库"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <ImageButton
+                android:id="@+id/service_warehouse_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="60px"
+                android:background="#00000000"
+                android:contentDescription=""
+                android:src="@mipmap/arrow" />
+        </RelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/preference_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_marginLeft="60px"
+            android:text="运输服务："
+            android:textColor="#666666"
+           android:gravity="center_vertical"
+            android:textSize="14sp"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150px"
+            android:onClick="rl_order_report_channel_click"
+            android:clickable="true">
+            <ImageView
+                android:id="@+id/iv_service_channel"
+                android:layout_toLeftOf="@+id/transport_service_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@mipmap/error"
+                android:textColor="#fc9b31"
+                android:visibility="gone"
+                android:textSize="14sp"/>
+            <TextView
+                android:enabled="false"
+                android:id="@+id/transport_service_text"
+                android:layout_toLeftOf="@+id/transport_service_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:hint="请选择运输服务"
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <ImageButton
+                android:id="@+id/transport_service_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="60px"
+                android:background="#00000000"
+                android:contentDescription=""
+                android:src="@mipmap/arrow" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/preference_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:text="输入包裹重量(KG)："
+            android:textColor="#666666"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="fill_parent"
+            android:layout_height="150px"
+            android:clickable="true">
+
+            <EditText
+                android:id="@+id/weight_weight_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:hint="请输入包裹重量"
+
+                android:textColor="#333333"
+                android:textColorHint="#cccccc"
+                android:textSize="14sp"
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/preference_item"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="206px"
+            android:text="您的运费："
+            android:textColor="#666666"
+            android:layout_marginLeft="60px"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="206px"
+            android:clickable="true">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/freight_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#fc9b31"
+                android:textColorHint="#fc9b31"
+                android:layout_marginRight="120px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="freight_compute"
+            android:text="计算运费"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:background="#1B82D1">
+        </Button>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
+

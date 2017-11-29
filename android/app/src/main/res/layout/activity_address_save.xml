@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_address_save"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yyox.mvp.ui.activity.AddressSaveActivity">
+
+    <RelativeLayout
+        android:id="@+id/navigationbar"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="#1B82D1">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:background="#00000000"
+            android:onClick="btn_back_click"
+            android:contentDescription=""/>
+
+        <TextView
+            android:id="@+id/tv_address_save_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_address_save_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:onClick="btn_address_edit_click"
+            android:text="@string/common_edit"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/preference_item"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="*"
+                        android:textColor="#fc9b31"
+                        android:gravity="center"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="姓名"
+                        android:textColor="#666666"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:id="@+id/et_address_save_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:hint="@string/user_address_name_hint"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#999999"
+                        android:textColorHint="#cccccc"
+                        android:textSize="14dp"
+                        android:layout_weight="0.11" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/preference_item"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="*"
+                        android:textColor="#fc9b31"
+                        android:gravity="center"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="手机号"
+                        android:textColor="#666666"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:id="@+id/et_address_save_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:hint="@string/user_address_phone_hint"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#999999"
+                        android:textColorHint="#cccccc"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/preference_item"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="*"
+                        android:textColor="#fc9b31"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/user_address_region"
+                        android:textColor="#666666"
+
+                        android:textSize="14dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:paddingLeft="10dp"
+                            android:gravity="center"
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="14dp"
+                            android:text=""/>
+                        <ImageView
+                            android:id="@+id/iv_address_save_address"
+                            android:layout_toLeftOf="@+id/btn_address_save_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:src="@mipmap/error"
+                            android:textColor="#fc9b31"
+                            android:visibility="gone"
+                            android:textSize="14dp"/>
+
+                        <Button
+                            android:id="@+id/btn_address_save_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@mipmap/arrow"
+                            android:background="#00000000"
+                            android:textColor="#666666"
+                            android:onClick="btn_address_save_address"
+                            android:text="@string/common_select"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/preference_item"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="*"
+                        android:textColor="#fc9b31"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="详细地址"
+                        android:textColor="#666666"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:id="@+id/et_address_save_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50sp"
+                        android:background="@null"
+                        android:hint="@string/user_address_detailed_hint"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#6c7883"
+                        android:textColorHint="#cccccc"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/preference_item"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="*"
+                        android:textColor="#fc9b31"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/user_address_zip_code"
+                        android:textColor="#666666"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:id="@+id/et_address_save_zipcode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50sp"
+                        android:background="@null"
+                        android:hint="@string/user_address_zip_code_hint"
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#6c7883"
+                        android:textColorHint="#cccccc"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/preference_item"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="*"
+                        android:textColor="#fc9b31"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/user_address_id_card"
+                        android:textColor="#666666"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="14dp"/>
+
+                    <EditText
+                        android:id="@+id/et_address_save_idcard"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50sp"
+                        android:background="@null"
+                        android:hint="@string/user_address_id_card_hint"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#6c7883"
+                        android:textColorHint="#cccccc"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_address_save_idcard_explain"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/user_address_upload_id_card"
+                        android:textColor="#666666"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="14dp"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/user_address_upload_id_card_instructions"
+                        android:textColor="#999999"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/preference_item"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/preference_item_img"
+                        android:clickable="true"
+                        android:onClick="ll_address_save_idcarda_click"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_address_save_idcarda"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/img" />
+
+                        <TextView
+                            android:id="@+id/tv_address_save_idcarda_explain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="#999999"
+                            android:textSize="10dp"
+                            android:text="@string/user_address_upload_id_card_positive" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/preference_item_img"
+                        android:clickable="true"
+                        android:onClick="ll_address_save_idcardb_click"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_address_save_idcardb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@mipmap/img" />
+
+                        <TextView
+                            android:id="@+id/tv_address_save_idcardb_explain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="#999999"
+                            android:textSize="10dp"
+                            android:text="@string/user_address_upload_id_card_back" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/preference_item"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:button="@drawable/checkbox_style"
+                        android:id="@+id/cb_address_save_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="#666666"
+                        android:textSize="14dp"
+                        android:text="@string/user_address_set_default"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_address_save_save"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="40sp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#1e81d1"
+                    android:text="@string/common_save"
+                    android:onClick="btn_address_save_click"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

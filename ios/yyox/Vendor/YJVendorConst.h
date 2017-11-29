@@ -1,0 +1,32 @@
+//
+//  YJVendorConst.h
+//  Transfer
+//
+//  Created by ddn on 16/12/15.
+//  Copyright © 2016年 张永俊. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface YJVendorConst : NSObject
+
+UIKIT_EXTERN NSString *const KF5HOSTNAME;
+UIKIT_EXTERN NSString *const KF5APPID;
+UIKIT_EXTERN NSString *const UMESSAGEAPPKEY;
+
+UIKIT_EXTERN NSString *const SHARESDKAPPKEY;
+UIKIT_EXTERN NSString *const SHARESDKAPPSECRET;
+
+UIKIT_EXTERN NSString *const WECHATAPPID;
+UIKIT_EXTERN NSString *const WECHATAPPSECRET;
+
+UIKIT_EXTERN NSString *const ADDRESS_DATABASE;
+UIKIT_EXTERN NSString *const PENDING_ORDER_DATABASE;
+UIKIT_EXTERN NSString *const ORDER_WAITOUT_DATABASE;
+UIKIT_EXTERN NSString *const ORDER_DIDOUT_DATABASE;
+UIKIT_EXTERN NSString *const ORDER_RUNNING_DATABASE;
+UIKIT_EXTERN NSString *const ORDER_INNER_DATABASE;
+UIKIT_EXTERN NSString *const ORDER_DONE_DATABASE;
+UIKIT_EXTERN NSString *const ORDER_MESSAGE_DATABASE;
+
+@end

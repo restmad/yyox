@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+
+        <TextView
+            android:id="@+id/tv_item_question_child_list_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerInParent="true"
+            android:text="问题"
+            android:textColor="#2A2828"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_item_question_child_list_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerInParent="true"
+            android:text="答案"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+

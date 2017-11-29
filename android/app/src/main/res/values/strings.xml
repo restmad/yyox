@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">邮客全球转运</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--公共common-->
+    <string name="common_name">姓名：&#160;&#160;&#160;&#160;</string>
+    <string name="common_phone">手机号：&#160;&#160;</string>
+    <string name="common_select">请选择</string>
+    <string name="common_edit">编辑</string>
+    <string name="common_new">新增</string>
+    <string name="common_next_step">下一步</string>
+    <string name="common_save">保存</string>
+    <string name="common_delete">删除</string>
+    <string name="common_confirm">确认</string>
+    <string name="common_add">添加</string>
+    <!--用户user-->
+        <!--我的-->
+        <string name="user_my">我的</string>
+        <string name="user_my_money">余额：0.00</string>
+        <string name="user_my_no_login">您还未登录</string>
+        <string name="user_my_coupon">优惠券</string>
+        <string name="user_my_recharge">确认支付0.00元</string>
+        <string name="user_my_warehouse">仓库列表</string>
+        <string name="user_my_warehouse_hint">覆盖4个国家</string>
+        <string name="user_my_address">地址管理</string>
+        <string name="user_my_consumption">消费记录</string>
+        <string name="user_my_settings">系统设置</string>
+        <!--注册-->
+        <string name="user_register">注册</string>
+        <string name="user_register_phone_prefix">+86</string>
+        <string name="user_register_phone_hint">请输入您的手机号码</string>
+        <string name="user_register_email_hint">请输入您的邮箱地址</string>
+        <string name="user_register_password_hint">请输入6~12位密码</string>
+        <string name="user_register_verification_code_hint">短信验证码</string>
+        <string name="user_register_send">发送</string>
+        <string name="user_register_describe">*完成账号注册,即表示您同意</string>
+        <string name="user_register_terms">《使用条件及会员条款》</string>
+        <!--登录-->
+        <string name="user_login">登录</string>
+        <string name="user_login_account">账号：</string>
+        <string name="user_login_password">密码：</string>
+        <string name="user_login_account_hint">请输入手机号或者邮箱地址</string>
+        <string name="user_login_password_hint">请输入6~12位由数字和字母组成的密码</string>
+        <string name="user_login_password_forget">忘记密码?</string>
+        <!--优惠卷-->
+        <string name="user_coupon_no">不使用</string>
+        <!--充值-->
+        <string name="user_recharge_vip">您的会员等级：</string>
+        <string name="user_recharge_vip_time">等级有效期：</string>
+        <string name="user_recharge_money">当前账户余额：</string>
+        <string name="user_recharge_recharge_money">输入充值金额：</string>
+        <string name="user_recharge_recharge_money_hint">0.00元</string>
+        <string name="user_recharge_way">请选择支付方式：</string>
+        <!--仓库列表-->
+        <string name="user_warehouse_copy">复制</string>
+        <!--地址address-->
+        <string name="user_address_list">地址管理</string>
+        <string name="user_address_edit">编辑收货地址</string>
+        <string name="user_address_region">所在地区</string>
+        <string name="user_address_detailed">详细地址：</string>
+        <string name="user_address_detailed_hint">请输入详细地址</string>
+        <string name="user_address_zip_code">邮政编码</string>
+        <string name="user_address_zip_code_hint">请输入邮政编码</string>
+        <string name="user_address_id_card">身份证号</string>
+        <string name="user_address_id_card_hint">请输入身份证号码</string>
+        <string name="user_address_upload_id_card">上传身份证照片</string>
+        <string name="user_address_upload_id_card_positive">点击上传身份证正面照</string>
+        <string name="user_address_upload_id_card_back">点击上传身份证背面照</string>
+        <string name="user_address_upload_id_card_instructions">必须是清晰原件电子版，仅支持jpg,jpeg,png,bmp格式，大小不超过2M</string>
+        <string name="user_address_name_hint">请输入您的姓名</string>
+        <string name="user_address_phone_hint">请输入您的手机号</string>
+        <string name="user_address_set_default">设为默认地址</string>
+        <string name="user_address_new">新增地址</string>
+        <!--消费记录-->
+        <!--系统设置-->
+        <string name="user_settings_personal">编辑个人信息</string>
+        <string name="user_settings_password">修改密码</string>
+        <string name="user_settings_push">推送提醒</string>
+        <string name="user_settings_no_login">注销登录</string>
+        <!--找回密码-->
+        <string name="user_find_password_head">找回密码</string>
+        <string name="user_find_password_new">请输入6~12位新密码</string>
+        <string name="user_find_password_set_new">重置密码</string>
+        <!--修改密码-->
+        <string name="user_settings_amend_password">修改密码</string>
+        <string name="user_settings_amend_password_old">旧密码：</string>
+        <string name="user_settings_amend_password_new">新密码：</string>
+        <string name="user_settings_amend_password_old_hint">请输入原始密码</string>
+        <string name="user_settings_amend_password_new_confirm">确认新密码</string>
+        <!--编辑个人信息-->
+        <string name="user_personal_logo">客户识别码</string>
+        <string name="user_personal_VIP">等级：</string>
+        <string name="user_personal_nickname">呢称：</string>
+        <string name="user_personal_nickmame_hint">请输入呢称</string>
+        <string name="user_personal_firstName">英文名：</string>
+        <string name="user_personal_firstName_hint">请输入英文名</string>
+        <string name="user_personal_lastName">英文姓：</string>
+        <string name="user_personal_lastName_hint">请输入英文姓</string>
+        <string name="user_personal_email">邮箱：</string>
+        <string name="user_personal_QQ">QQ：</string>
+        <string name="user_personal_QQ_hint">请输入QQ号</string>
+    <!--订单order-->
+    <!--包裹package-->
+    <!--海淘buy-->
+        <string name="buy_title">海淘全球购</string>
+        <string name="haitao">常用海淘</string>
+        <string name="shopping_guide">导购网站</string>
+    <!--服务service-->
+        <string name="service_title">服务</string>
+    <!--服务的head-->
+        <string name="service_head_price">价格</string>
+        <string name="service_head_service">服务</string>
+        <string name="service_head_security">保障</string>
+        <string name="service_head_support">在线工单</string>
+        <string name="service_head_online_service">在线客服</string>
+        <string name="service_head_query">常见问题搜索</string>
+        <string name="service_footer_query">更多问题</string>
+</resources>
